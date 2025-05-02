@@ -4,7 +4,19 @@
 		<title>목록 문단에 이미지, 위치, 스타일 제어하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-					
+			#list1{
+				list-style-image: url(./images/arrow.gif);
+				list-style-position: inside;
+			}
+			#list2{
+				list-style: upper-roman;
+			}
+			ol li:first-child{
+				list-style: url(./images/num1_green.gif) inside;
+			}
+			#list2 li:last-child{
+				list-style: hiragana inside;
+			}
 		</style>
 	</head>
 
