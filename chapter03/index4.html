@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{margin: 50px;}
+      h2{text-align: center; font-size: 24px; font-weight: 700;}
+      form{
+        border: 5px solid #918f8f;
+        width: 700px;
+        margin: 50px auto;
+        padding: 30px;}
+      legend{display: none;}
+      li{
+        border-bottom: 1px solid #464040;
+        padding: 10px 0;
+      }
+      li label{
+        display: inline-block;
+        width: 78px;
+      }
+      li input{
+        width:87% ;
+        padding: 8px 5px;
+        box-sizing: border-box;
+      }
+      #d-day{width: 50%;}
+      small{position: relative; top: 10px; left: 5px; font-size: 12px;}
+      div{text-align: center; margin-top: 40px;}
+      div input{
+        border: none;
+        background: #7dc75f;
+        color: #45ad8b;
+        padding: 10px 20px;
+      }
+    </style>
+</head>
+<body>
+    <h2>쿠팡</h2>
+    <form action="#">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul id="shipping">
+                <li>
+                    <label for="prod">주문상품</label>
+                    <input type="text" id="prod"value="상품용 3kg" readonly>
+                </li>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name"autofocus required>
+                </li>
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="text" id="addr" required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="mail" id="addr" required>
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" id="phone" placeholder="하이픈 빼고 입력해주세요 (01053709915)" required>
+                </li>
+                <li><label for="d-day">배송 지정</label>
+                    <input type="date" id="d-day"><small>(주문일로부터 최소3일 이후)
+                    </small></li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <h3>이벤트와 새로운 소식</h3>
+            <ul id="radioButton">
+                <li>
+                    <input type="radio"id="mailon">
+                     <label for="mailon">메일 수신</label>
+                </li>
+                <li>
+                    <input type="radio"id="mailoff">
+                     <label for="mailoff">메일 수신  안함</label>
+                </li>
+                </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+</html>
