@@ -80,7 +80,46 @@
 				border-radius:5px;
 				}
 			/* nav Layout */
-			
+			nav{
+				width: 800px;
+				margin: 0 auto;
+				position: relative;
+
+			}
+			#logo{
+				position: absolute;
+				top: -10px;
+				left: -50px;
+			}
+			#topMenu{
+				display: flex;
+				position: absolute;
+				right: 0;
+				top: -30px;
+				list-style: none;
+			}
+			#topMenu li{
+				padding: 0 10px;
+				position: relative;
+			}
+			#topMenu li:not(:last-child)::after{
+				content: "";
+				width: 1px;
+				height: 10px;
+				background: #000;
+				position: absolute;
+				top: 4px;
+				right: 0;
+			}
+			#searchForm{
+				position: relative;
+				top: -5px;
+				left: 150px;
+			}
+			h1{
+				text-align: center;
+				
+			}
 		</style>
 	</head>
 
